@@ -1,11 +1,11 @@
-#include "widget.h"
+#include "digicode.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Widget w;
+    Digicode w;
     w.show();
     return QApplication::exec();
 }

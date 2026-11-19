@@ -1,4 +1,4 @@
-QT += widgets
+QT += widgets qml
 
 CONFIG += c++17
 
@@ -8,15 +8,21 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    widget.cpp
+    digicode.cpp \
+    porte.cpp
 
 HEADERS += \
-    widget.h
+    digicode.h \
+    porte.h
 
 FORMS += \
-    widget.ui
+    digicode.ui \
+    porte.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Porte.qrc
